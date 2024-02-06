@@ -1,1 +1,1 @@
-echo compile.batが未編集
+echo compile.bat is not described
