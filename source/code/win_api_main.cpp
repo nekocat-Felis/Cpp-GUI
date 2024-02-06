@@ -3,7 +3,10 @@
 */
 
 #include <windows.h>
+#include <gdiplus.h>
 #include "win_proc.h"
+
+#pragma comment (lib, "Gdiplus.lib")
 
 // main関数相当
 int WINAPI wWinMain(
@@ -20,7 +23,7 @@ int WINAPI wWinMain(
     wc.cbClsExtra    = 0;
     wc.cbWndExtra    = 0;
     wc.hInstance     = hInstance;
-    wc.hIcon         = LoadIcon(NULL, IDI_APPLICATION);
+    wc.hIcon         = LoadImage(NULL, IDI_APPLICATION);
     wc.hCursor       = LoadCursor(NULL, IDC_ARROW);
     wc.hbrBackground = (HBRUSH) (COLOR_WINDOW + 1);
     wc.lpszMenuName  = NULL;
