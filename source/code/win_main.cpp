@@ -3,10 +3,7 @@
 */
 
 #include <windows.h>
-#include <gdiplus.h>
 #include "win_proc.h"
-
-#pragma comment (lib, "Gdiplus.lib")
 
 // main関数相当
 int WINAPI wWinMain(
